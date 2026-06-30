@@ -34,5 +34,6 @@ class prg3{
             final_amount=gst-discount;
             System.out.println("final amount after discount "+final_amount);
         }
+        sc.close();
     }
 }

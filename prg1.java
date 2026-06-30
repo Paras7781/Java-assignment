@@ -46,5 +46,6 @@ class prg1 {
         if(count==2){
             System.out.println("You are failed");
         }
+        sc.close();
     }
 }

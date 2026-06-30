@@ -53,7 +53,6 @@ class prg2{
                 default:
                     System.out.println("Invalid choice");
             }
-        }while(true); 
-            
+        }while(true);    
     }
 }
