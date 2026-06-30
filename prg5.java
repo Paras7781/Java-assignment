@@ -10,13 +10,13 @@ class prg5{
         double income=sc.nextDouble();
         System.out.println("Enter cibil score ");
         int cibil=sc.nextInt();
+        sc.nextLine();
         System.out.println("Enter existing loan(yes/no) ");
         String loan=sc.nextLine();
-        sc.nextLine();
         if(age>=21){
             if(income>=30000){
                 if(cibil>=750){
-                    if(loan.equals("no")){
+                    if(loan.equalsIgnoreCase("no")){
                         System.out.println("Eligible for loan");
                     }
                     else{
