@@ -1,22 +1,21 @@
-import java.util.*;
+import java.io.*;
 class prg5{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter name ");
-        String name=sc.nextLine();
+        String name=br.readLine();
         System.out.println("Enter age ");
-        int age=sc.nextInt();
+        int age=Integer.parseInt(br.readLine());
         System.out.println("Enter monthly income ");
-        double income=sc.nextDouble();
+        double income=Double.parseDouble(br.readLine());
         System.out.println("Enter cibil score ");
-        int cibil=sc.nextInt();
-        sc.nextLine();
+        int cibil=Integer.parseInt(br.readLine());
         System.out.println("Enter existing loan(yes/no) ");
-        String loan=sc.nextLine();
+        String loan=br.readLine();
         if(age>=21){
             if(income>=30000){
                 if(cibil>=750){
-                    if(loan.equalsIgnoreCase("no")){
+                    if(loan.equals("no")){
                         System.out.println("Eligible for loan");
                     }
                     else{
